@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe | Data Analyst & Statistician</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <i class="fa-solid fa-bars mobile-nav-toggle"></i>
+
+    <header id="header">
+        <div class="d-flex flex-column">
+            
+            <div class="profile">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" alt="" class="img-fluid rounded-circle">
+                <h1 class="text-light"><a href="index.html">Jane Doe</a></h1>
+                <div class="social-links mt-3 text-center">
+                    <a href="#" class="github"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" class="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+            </div>
+
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#home" class="nav-link scrollto active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="fa-solid fa-user"></i> <span>About</span></a></li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="fa-solid fa-file"></i> <span>Resume</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="fa-solid fa-chart-pie"></i> <span>Portfolio</span></a></li>
+                    <li><a href="#testimonials" class="nav-link scrollto"><i class="fa-solid fa-comment-dots"></i> <span>Testimonials</span></a></li>
+                    <li><a href="#contact" class="nav-link scrollto"><i class="fa-solid fa-envelope"></i> <span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section id="home" class="d-flex flex-column justify-content-center align-items-center">
+            <div class="hero-container">
+                <h1>Jane Doe</h1>
+                <p>I'm a <span class="typed">Statistician & Data Storyteller</span></p>
+                <a href="#portfolio" class="btn-hero">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About</h2>
+                    <p>I bridge the gap between complex datasets and actionable business insights. With a background in applied mathematics and a passion for visualization, I help organizations see the story hidden in the numbers.</p>
+                </div>
+                <div class="about-grid">
+                    <div class="info-box">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <strong>Degree:</strong> M.S. Statistics
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>Location:</strong> New York, NY
+                    </div>
+                    <div class="info-box">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <strong>Freelance:</strong> Available
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>A timeline of my professional journey and academic achievements.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>Master of Statistics</h4>
+                            <h5>2019 - 2021</h5>
+                            <p><em>University of Data Science</em></p>
+                            <p>Specialized in Bayesian Inference and Machine Learning.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Senior Data Analyst</h4>
+                            <h5>2021 - Present</h5>
+                            <p><em>FinTech Solutions Inc.</em></p>
+                            <ul>
+                                <li>Led a team of 3 analysts to optimize credit risk models.</li>
+                                <li>Reduced data processing time by 40% using Python scripts.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>Selected case studies in R, Python, and Tableau.</p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <div class="portfolio-card">
+                        <div class="card-body">
+                            <span class="badge">Python</span> <span class="badge">ML</span>
+                            <h3>Customer Churn Prediction</h3>
+                            <p>Predicting user attrition using Random Forest.</p>
+                            <button class="btn-details" data-id="1">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-body">
+                            <span class="badge">R</span> <span class="badge">Shiny</span>
+                            <h3>COVID-19 Dashboard</h3>
+                            <p>Real-time interactive tracking of infection trends.</p>
+                            <button class="btn-details" data-id="2">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-card">
+                        <div class="card-body">
+                            <span class="badge">SPSS</span> <span class="badge">Excel</span>
+                            <h3>Market Basket Analysis</h3>
+                            <p>Retail transaction mining for product associations.</p>
+                            <button class="btn-details" data-id="3">View Details <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Testimonials</h2>
+                </div>
+                <div class="testimonial-grid">
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            Jane's ability to explain complex statistical models to non-technical stakeholders is unmatched.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                        <h3>Sarah Johnson</h3>
+                        <h4>CTO, TechStart</h4>
+                    </div>
+                    <div class="testimonial-item">
+                        <p>
+                            <i class="fa-solid fa-quote-left quote-icon-left"></i>
+                            The dashboard she built completely transformed how we view our weekly metrics. Clean and fast.
+                            <i class="fa-solid fa-quote-right quote-icon-right"></i>
+                        </p>
+                        <h3>Mike Ross</h3>
+                        <h4>Product Manager</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Let's discuss your data needs.</p>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/MASUKKAN_ID_FORMSPREE_KAMU_DISINI" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" rows="5" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong><span>Jane Doe</span></strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <div class="footer-socials">
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    Designed with <i class="fa-solid fa-heart" style="color: var(--color-accent);"></i> for Data Science
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <div id="portfolio-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <h2 id="modal-title">Project Title</h2>
+                <div class="modal-meta">
+                    <span id="modal-tech" class="tech-tags"></span>
+                </div>
+                <div class="modal-image-container">
+                    <img id="modal-img" src="" alt="Project Screenshot" class="img-fluid">
+                </div>
+                <div id="modal-desc" class="modal-text"></div>
+                <a href="#" id="modal-link" target="_blank" class="btn-hero modal-btn">View Live Project</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
