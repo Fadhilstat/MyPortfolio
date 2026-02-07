@@ -61,34 +61,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 4. Portfolio Modal Logic ---
     
-    // DATABASE PROJECT
+    // DATABASE PROJECT (Diupdate Sesuai CV)
     const projectData = [
         {
             id: 1,
-            title: "Customer Churn Analysis",
-            tech: "Python | Pandas | PPT",
-            img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80", 
-            desc: "Analisis mendalam mengenai tingkat atrisi pelanggan. Saya menggunakan Random Forest untuk prediksi dan menyajikan hasilnya kepada manajemen.",
-            link: "assets/documents/laporan_churn.pptx", // Pastikan file ada
-            linkType: "download"
+            title: "AI & LLM Model Evaluation",
+            tech: "Python | RLHF | Data Annotation",
+            // Ganti 'assets/img/ai_project.jpg' dengan nama file gambarmu jika sudah ada
+            img: "assets/img/profile.jpg", 
+            desc: "<strong>Project at Innodata:</strong> Leverage advanced data evaluation techniques to improve Large Language Model (LLM) performance. Enhanced AI model accuracy by 20% by evaluating 500+ Indonesian language responses against strict rubrics for cultural relevance.",
+            link: "#", 
+            linkType: "detail"
         },
         {
             id: 2,
-            title: "COVID-19 Dashboard",
-            tech: "R | Shiny | Web App",
-            img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80",
-            desc: "Aplikasi web interaktif untuk memantau tren pandemi secara real-time. Dibangun menggunakan R Shiny.",
-            link: "https://shinyapps.io/user/app-demo",
-            linkType: "website"
+            title: "USD/JPY Market Prediction Model",
+            tech: "Forex Analysis | Statistics | Modeling",
+            img: "assets/img/profile.jpg",
+            desc: "<strong>Project at Traders Family:</strong> Engineered daily market prediction models for USD/JPY by synthesizing technical indicators and fundamental news. Optimized trading strategies during Asian and London sessions based on historical price action data.",
+            link: "#",
+            linkType: "detail"
         },
         {
             id: 3,
-            title: "Thesis: Statistical Modeling",
-            tech: "SPSS | Academic Writing",
-            img: "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=800&q=80",
-            desc: "Penelitian akademis lengkap mengenai pemodelan statistik untuk data ekonomi makro.",
-            link: "assets/documents/skripsi_statistik.pdf", // Pastikan file ada
-            linkType: "pdf"
+            title: "Business Development Reporting",
+            tech: "Excel | Power BI | Data Reporting",
+            img: "assets/img/profile.jpg",
+            desc: "<strong>Project at GAOTEK:</strong> Streamlined management reporting by compiling weekly progress updates on business development activities, ensuring 100% on-time delivery of key performance metrics in a fully remote environment.",
+            link: "#", // Masukkan link contoh laporan jika ada
+            linkType: "detail"
         }
     ];
 
@@ -115,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 mDesc.innerHTML = project.desc;
                 mLink.href = project.link;
 
-                // Cek Tipe Link (Download vs View)
+                // Cek Tipe Link
                 if (project.linkType === 'download') {
                     mLink.innerHTML = '<i class="fa-solid fa-download"></i> Download File';
                     mLink.setAttribute('download', '');
@@ -124,9 +125,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     mLink.removeAttribute('download');
                     mLink.setAttribute('target', '_blank');
                 } else {
-                    mLink.innerHTML = 'View Live Project <i class="fa-solid fa-arrow-up-right-from-square"></i>';
+                    mLink.innerHTML = 'View Details / Certificate';
                     mLink.removeAttribute('download');
-                    mLink.setAttribute('target', '_blank');
+                    // Jika linknya '#' (kosong), hilangkan tombol link
+                    if(project.link === "#") {
+                        mLink.style.display = 'none';
+                    } else {
+                        mLink.style.display = 'inline-block';
+                        mLink.setAttribute('target', '_blank');
+                    }
                 }
                 
                 modal.classList.add('show');
